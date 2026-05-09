@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Custo Invisível da IA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="water-counter-box">
+        <p class="water__counter__box__p">Água consumida por IAs enquanto você navega:</p>
+        <span id="liters">0.00</span>
+        <p class="water__counter__box__p">Litros</p>
+    </div>
+
+    <header>
+        <nav>
+            <div class="logo">Projeto Lidiana</div>
+            <ul>
+                <li><a href="#o-que-e">O que é?</a></li>
+                <li><a href="#agua">Consumo de Água</a></li>
+                <li><a href="#energia">Energia</a></li>
+                <li><a href="#carbono">Carbono</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>A Inteligência Artificial é rápida, mas qual o custo para o planeta?</h1>
+            <p>Descubra como os Data Centers que processam suas pesquisas impactam o meio ambiente.</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="o-que-e" class="content__section light__bg">
+            <h2>O que é um Data Center para IA?</h2>
+            <div class="grid__container">
+                    <p>Imagine um prédio gigante repleto de computadores superpotentes. Isso é um Data Center. Quando você pede para uma IA criar um texto ou imagem, esses computadores trabalham intensamente, gerando calor extremo e exigindo recursos naturais constantes para não "derreterem".</p>
+                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=500" alt="Servidores de Data Center">
+            </div>
+        </section>
+
+        <section id="agua" class="content__section light__bg">
+            <h2>Sede Digital: O Consumo de Água</h2>
+            <p>Para resfriar os milhares de servidores, muitos Data Centers usam sistemas de evaporação de água. Estima-se que, para cada 20 a 50 perguntas que você faz a uma IA generativa, <strong>500ml de água</strong> são "bebidos" pelo sistema para resfriamento.</p>
+            <img src="img/consumodeagua.webp" alt="">
+            <p>O resfriamento dos componentes em um Data Center é essencial para suprir a sua necessidade de funcionamento contínuo, e é o processo responsável por um volumoso gasto de água.<br><br>
+
+                Existem os sistemas aberto e fechado de resfriamento.<br>
+O sistema <strong>aberto</strong> contém dutos e ar-condicionado, gastando água para resfriar esse ar utilizado.<br> 
+Já o sistema <strong>fechado</strong> utiliza líquidos refrigerantes, e este pode reduzir a quantidade de água utilizada em até 70%.</p>
+            <div class="highlight__box">
+                <p><strong>Fato:</strong> Sistemas fechados podem reduzir esse gasto em até 70%, mas nem todos os centros utilizam essa tecnologia ainda.</p>
+            </div>
+        </section>
+
+        <section id="energia" class="content__section light__bg">
+            <h2>O Consumo de Energia</h2>
+            <p>Além da água, um Data Center também consome muito mais energia elétrica do que muitos podem imaginar.</p>
+            <img src="img/consumodeenergia.webp" alt="">
+            <p>A energia elétrica é essencial para os Data Centers não só para manter o <strong>funcionamento</strong> do local, pois contém uma grande quantidade de componentes elétricos, mas também para o <strong>resfriamento</strong>, o qual utiliza cerca de 40% da eletricidade total. Modelos mais avançados de Inteligência Artificial também utilizam mais energia, por terem uma capacidade de processamento mais robusta. 
+<br>Projeta-se que de <strong>6 a 12%</strong>  de toda a demanda de eletricidade dos EUA até 2028 será destinada à alimentação de Data Centers.</p>
+        </section>
+
+        <section id="carbono" class="content__section light__bg">
+            <h2>A emissão de carbono</h2>
+            <p>O uso ininterrupto de eletricidade mencionado no tópico anterior tem implicações <strong>escondidas</strong>, relacionadas ao consumo de carbono.</p>
+            <img src="img/emissaodecarbono.webp" alt="">
+            <p>A intensa demanda energética mencionada anteriormente está tornando necessário que mais eletricidade esteja disponível para uso dos Data Centers. <br>Por isso, empresas de energia estão reativando <strong>usinas de carvão mineral</strong>, uma alternativa mais barata do que outras fontes limpas, como o gás natural. <br>A queima do carvão a fim de gerar eletricidade, sendo um combustível fóssil, libera uma quantidade enorme de gases de efeito estufa, principalmente o dióxido de carbono (CO2).</p>
+            <div class="highlight__box">
+                <p><strong>NOTA: </strong>O efeito estufa toma esse nome porque tais gases "envolvem" a Terra, e dificultam a saída do calor de dentro do planeta, aumentando a temperatura, como uma estufa.</p>
+            </div>
+        </section>
+
+        </main>
+
+    <footer>
+        <p>2026 Projeto - Conscientização Ambiental Digital</p>
+    </footer>
+
+    <script>
+        // Lógica do Contador (Simulação baseada em média de consumo global)
+        // Estimativa hipotética para fins didáticos: 0.5L a cada 10 segundos de processamento coletivo
+        let totalLiters = 0;
+        const display = document.getElementById('liters');
+
+        setInterval(() => {
+            totalLiters += 0.05; // Incremento por segundo
+            display.innerText = totalLiters.toFixed(2);
+        }, 1000);
+    </script>
+</body>
+</html>
