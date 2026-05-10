@@ -181,6 +181,12 @@ footer {
     #liters {
         font-size: 1.5rem;
     }
+    
+    img {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    width: 100%;
+    }  
 
     .water__counter__box__p {
         font-size: 0.9rem;
